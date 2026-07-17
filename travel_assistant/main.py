@@ -26,7 +26,9 @@ def main() -> None:
     agent = Agent(
         client=client,
         name="travel-buddy",
-        instructions="TODO: write TravelBuddy's system instructions here.",
+        instructions="You are TravelBuddy, a friendly travel assistant. "
+            "Give practical, concise advice for trip planning, including local context, "
+            "budget awareness, and safety-minded tips.",
         # History is managed by the hosting infrastructure, so don't store it server-side.
         default_options={"store": False},
     )
